@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    android:rowCount="5">
+
+    <TextView
+        android:id="@+id/N"
+        android:text="姓名:"
+        android:textSize="30dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1" />
+    <TextView
+        android:id="@+id/NM"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2" />
+
+    <TextView
+        android:id="@+id/L"
+        android:text="請假日:"
+        android:textSize="30dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1" />
+    <TextView
+        android:id="@+id/Leave"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_columnSpan="2" />
+
+    <TextView
+        android:id="@+id/re"
+        android:text="原因:"
+        android:textSize="30dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+    <TextView
+        android:id="@+id/Reason"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="2" />
+
+    <TextView
+        android:id="@+id/content"
+        android:text="狀態:"
+        android:textSize="30dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+
+    <RadioButton
+        android:text="同意"
+        android:id="@+id/agree"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+
+    <RadioButton
+        android:text="不同意"
+        android:id="@+id/reject"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"/>
+
+    <Button
+        android:text="簽核"
+        android:id="@+id/sign"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="2"
+        android:layout_rowWeight="1"
+        android:textSize="30dp" />
+</GridLayout>
